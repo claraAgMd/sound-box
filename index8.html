@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style8.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style8.css">
+    <title>Sound Box</title>
+</head>
+<body>
+
+    <header>
+        <a href="#"  class="logo"> <i class="fa-solid fa-headphones"></i> Soundbox</a>
+
+        <ul class="navegacao">
+            <li><a href="#">Visão Geral</a></li>
+            <li><a href="#">Especificações</a></li>
+            <li><a href="#">Avaliações</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div id="menu"><i class="fa-solid fa-bars"></i></div>
+        </div>
+
+    </header>
+    
+    <section class="home">
+        <div class="home-img">
+            <img src="./Projeto8/product1.png" alt="Fone de ouvido">
+        </div>
+
+        <div class="home-text">
+
+            <h1>Wireless <br> Headphones</h1>
+            <h5>A maneira mais inteligente de ouvir</h5>
+            <h3>$199.00</h3>
+            <a href="#" class="btn">Compre Agora</a>
+        </div>
+    </section>
+
+    <div class="main">
+        <div class="row">
+            <li><img src="./Projeto8/main1.png" onclick=" slider('./Projeto8/product1.png')" alt="foto do fone de ouvido"></li>
+        </div>
+        <div class="row2">
+            <li><img src="./Projeto8/main2.png" onclick=" slider('./Projeto8/product2.png')" alt="foto do fone de ouvido"></li>
+        </div>
+        <div class="row3">
+            <li><img src="./Projeto8/main3.png" onclick=" slider('./Projeto8/product3.png')" alt="foto do fone de ouvido"></li>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function slider(anything) {
+        document.querySelector('.home-img img').src = anything;
+}
+
+        let menu = document.querySelector ('#menu-icon');
+        let navbar = document.querySelector ('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-solid')
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
